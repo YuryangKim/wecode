@@ -21,48 +21,83 @@
             </h1>
             <!-- 메뉴바 -->
             <ul class="menu-bar">
-                <li><a href="home">HOME</a></li>
-                <li><a href="aoubt-me">ABOUT ME</a></li>
-                <li><a href="favorite">FAVORITE</a></li>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about-me">ABOUT ME</a></li>
+                <li><a href="#favorite">FAVORITE</a></li>
             </ul>
         </header>
 
-        <!-- section -->
-        <section>
-            <h2 class="a11y-hidden">사진</h2>
-                <div class="photo"> 
-                    <img src="./images/profile.jpg" alt="Yuryang Kim">
+        <!-- main -->
+        <main class="main" id="home">
+            <section class="main profile" id="home">
+                <div class="profile-img"> 
+                    <img class="profile-img-img" src="./images/profile.jpg" alt="Yuryang Kim">
                 </div>
-            <!-- 이름,생년월일,contact 내용 -->
-            <div class="profile">
-                <p>김유량</p>
-                <p>Kim Yu Rynag</p>
-                <p>1992.03.26</p>    
-            </div>
-            <!-- 콘택트 아이콘 -->
-            <div class="github">
-                <a href="https://github.com/YuryangKim/">
-                    <img src="./images/github.svg" alt="github">
-                </a>
-            </div>
-            <div class="instagram">
-                <a href="https://www.instagram.com/y.raeng_">
-                    <img src="./images/insta_icon.svg" alt="instargram">
-                </a>
-            </div>
-            <div class="blog">
-                <a href="https://yuryangkim.github.io/">
-                    <img src="./images/hexo_icon.svg" alt="gitblog">
-                </a>
-            </div>
+                <!-- 이름,생년월일,contact 내용 -->
+                <div class="profile">
+                    <p>김유량</p>
+                    <p>Kim Yurynag</p>
+                    <p>1992.03.26</p>    
+                </div>
+            </section>
 
-            <div class="quote">
-                <p>"If you feel like you shouldn't be somewhere: Fake it.</p>
-                <p>Do it not until you make it-but until you become it."</p>
-                <p>-AMY CUDDY</p>
+            <!-- 콘택트 아이콘 -->
+            <div class="contact-icon">
+                <div class="github">
+                    <a href="https://github.com/YuryangKim/">
+                        <img class=github-img src="./images/github.svg" alt="github">
+                    </a>
+                </div>
+                <div class="insta">
+                    <a href="https://www.instagram.com/y.raeng_">
+                        <img class=insta-img src="./images/insta_icon.svg" alt="instagram">
+                    </a>
+                </div>
+                <div class="blog">
+                    <a href="https://yuryangkim.github.io/">
+                        <img class=blog-img src="./images/hexo_icon.svg" alt="gitblog">
+                    </a>
+                </div>
             </div>
-        </section>
+        
+
+
+            <div id="about-me">
+                <a href="#about-me"></a>
+                    <div class="education">
+                        <p>EDUCATION</p>
+                        <p>21.11. - 22.01. Wecode 수강</p>
+                        <p>21.01. - 21.03. Fastcampus 수강</p>
+                    </div>
+
+                    <div class="skill">
+                        <p>SKILL</p>
+                        <p>HTML</p>
+                        <p>CSS</p>
+                        <p>Javascript</p>
+                        <p>Python</p>
+                    </div>
+
+                    <div class="project">
+                        <p>TEAM PROJECT - APPLE CLONE</p>
+                            <a href="https://github.com/YuryangKim/apple-clone">
+                                <img class="apple-clone-project" src="./images/project_image.png" alt="applecloneproject">
+                            </a>
+                    </div>
+
+            <div id="favorite">
+                <a href="#favorite"></a>
+                    <div class="favorite-page">
+                        <p>FAVORITE</p>
+                        <div class="favorite-page-img">
+                            <img src="./images/exhibition.jpg" alt="exhibition">
+                            <img src="./images/musical.jpg" alt="musical">
+                            <img src="./images/food.jpeg" alt="food">
+                            <img src="./images/travel.jpeg" alt="travel">
+                        </div>
+                    </div>
+            </div>
+        
     </div> 
 </body>
 </html>
-√
