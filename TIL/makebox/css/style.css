@@ -1,0 +1,26 @@
+.outBox{
+    background-color: #ebeff3;
+    margin: auto;
+}
+
+.colorBox{
+    box
+    background-color: #709fb0;
+}
+
+.colorCode{
+    background-color: red;
+}
+
+.bottomBox{
+    background-color: pink;
+}
+
+.heartBox{
+    background-color: gray;
+}
+
+.p {
+    display: inline-block;
+    
+}

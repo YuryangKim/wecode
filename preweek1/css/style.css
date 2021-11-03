@@ -14,6 +14,7 @@
 *{
     padding: 0;
     margin: 0;
+    overflow-y:auto; 
 }
 
 .container{
@@ -133,7 +134,7 @@ section{
     font-weight: 600;
 }
 
-.education>:nth-child(n+2){
+.education>p:nth-child(n+2){
     background-color: rgba(255, 217, 64, 0.995);
     background-size: 700px;
     margin-bottom: 20px;
@@ -166,24 +167,61 @@ section{
     font-weight: 600;
 }
 
+
 .favorite-page{
     color: black;
     font-size: 2.0rem;
     font-weight: 600;
     max-width: 700px;
     box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    overflow:visible;
     align-items: left;
     padding-top: 50px;
 }
 
 
-.favorite-page-img>img{
-    margin-top: 10px;
-    width: 340px;
-    height: 440px;
-    justify-content: space-between;
-    align-items: center;
+.favorite-page-img{
+    position: relative;
+    ;
+}
+
+figure {
+    width: 100%;
+    position: relative;
+}
+
+figure>img {
+    display: block;
+    width: 100%;
+    height: auto;
+
+} 
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.6);
+    -webkit-transition: .6s ease;
+    transition: .6s ease;
+}
+
+.overlay .description {
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+figure:hover .overlay {
+    display: block;
+    height: 100%;
 }
